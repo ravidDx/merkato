@@ -1,0 +1,46 @@
+*{
+padding:0;
+margin: 0;
+border: 0;
+background: none;
+}
+
+.logo{
+	padding-top: 20px;
+	padding-left: 180px;
+}
+
+nav{
+	padding-top: 20px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+ul{
+	list-style-type: none;
+	
+}
+
+li{
+	list-style-type: none;
+	display: inline-block;
+	padding-right: 10px;
+	font-size: 20px; 
+	
+}
+
+a:link{
+	text-decoration: none;
+
+}
+
+.negro{
+	color: #000;
+}
+
+a.btn:focus{
+	outline-style: none;
+	box-shadow:0 0 0 0 rgba(0,0,0,0)
+	background:transparent;
+	border: 0px;
+}

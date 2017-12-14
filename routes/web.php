@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'UsuarioController@inicio');
 
 /*
 Route::get('/usuario',function(){
@@ -21,8 +19,8 @@ Route::get('/usuario',function(){
 });
 */
 
-Route::get('/usuario', 'UserController@index');
 
+Route::get('/usuario', 'UserController@index');
 
 
 Route::get('/usuario/{id}', 'UserController@show')->where('id','[0-9]+');
@@ -31,4 +29,6 @@ Route::get('/usuario/{id}', 'UserController@show')->where('id','[0-9]+');
 Route::get('usuario/nuevo','UserController@create');
 
 Route::get('saludo/{name}/{nickname?}' , 'WelcomeUserController'  );
+
+Route::get('/login', 'UsuarioController@index');
 

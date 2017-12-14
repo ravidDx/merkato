@@ -6,6 +6,11 @@ use Illuminate\Http\Request;
 
 class UsuarioController extends Controller
 {
+    public function inicio()
+    {
+        return view('inicio');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -13,7 +18,7 @@ class UsuarioController extends Controller
      */
     public function index()
     {
-        //
+        //return view('inicio');
     }
 
     /**
